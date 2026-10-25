@@ -1,0 +1,12 @@
+{
+  "model_name": "Qwen/Qwen3-4B",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "precision": "bfloat16",
+  "attention_backend": "sdpa",
+  "body_budget_tokens": 448,
+  "scoring_batch_size": 1,
+  "shard_rows": 1,
+  "train_path": "artifacts/audited_train/splits/train.jsonl",
+  "dev_path": "artifacts/audited_train/splits/dev.jsonl",
+  "output_dir": "artifacts/condition_probe/pilot_singleton_v1"
+}

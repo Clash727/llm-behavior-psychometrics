@@ -1,0 +1,44 @@
+{
+  "protocol_version": "condition_baseline_v2",
+  "source": {
+    "train": "artifacts/audited_train/splits/train.jsonl",
+    "dev": "artifacts/audited_train/splits/dev.jsonl"
+  },
+  "seed": 20261019,
+  "iid_role_fractions": {"R": 0.2, "F": 0.6, "S": 0.2},
+  "condition_probe": {
+    "input_manifest": "artifacts/condition_baseline/manifests",
+    "feature_dir": "artifacts/condition_probe",
+    "required_status": "complete",
+    "max_body_tokens": 448,
+    "scoring_batch_size": 1,
+    "scoring_policy": "single_article_forward_per_condition_no_mixed_padding",
+    "conditions": ["raw", "neutral", "human_hypothesis", "machine_hypothesis"],
+    "rows_filename": "rows.jsonl"
+  },
+  "human_reference": {
+    "min_bucket_rows": 200,
+    "scale": "1.4826*MAD",
+    "zero_mad_fallback": "global_mad_then_iqr_then_unit",
+    "cdf": "empirical_midrank"
+  },
+  "models": {
+    "logistic_regression": {"C": 1.0, "max_iter": 1000, "class_weight": null},
+    "hist_gradient_boosting": {
+      "learning_rate": 0.08,
+      "max_iter": 300,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0,
+      "min_samples_leaf": 30,
+      "early_stopping": false
+    }
+  },
+  "selection": {"finite_choice": "LR_or_HGB", "threshold": 0.5},
+  "bootstrap": {"replicates": 200, "seed": 20261020, "unit": "connected_component", "paired": true},
+  "comparison_sets": ["A", "B", "C_neutral", "C", "D_global", "D"],
+  "short_text_definition": "whitespace_token_count < 100",
+  "selection_metric": "0.7*macro_f1 + 0.3*short_macro_f1; if S has no short rows use all-row macro_f1 for the short term",
+  "cpu_threads": 2,
+  "formal_run_requires_release": true,
+  "release_marker": "artifacts/condition_baseline/FORMAL_RELEASE.json"
+}

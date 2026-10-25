@@ -1,0 +1,11 @@
+{
+  "model_name": "Qwen/Qwen3-4B",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "precision": "bfloat16",
+  "max_length": 512,
+  "batch_size": 2,
+  "logit_time_chunk": 8,
+  "train_path": "artifacts/audited_train/splits/train.jsonl",
+  "dev_path": "artifacts/audited_train/splits/dev.jsonl",
+  "output_dir": "artifacts/token_confidence/features_smoke8"
+}

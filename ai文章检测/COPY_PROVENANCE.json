@@ -1,0 +1,121 @@
+{
+  "source": "/home/revy/数据挖掘/b_text_detector/research/legacy",
+  "files": [
+    {
+      "path": "configs/condition_baseline.json",
+      "sha256": "bd28805790f4d1720f06ba392c63fc8f298d1026b1e46fc6b7af05d6d505b72f"
+    },
+    {
+      "path": "configs/condition_probe.json",
+      "sha256": "408a3017c482f5511c8cc5516ed3a7ff37ddbbbf64c824022b432d16d5003446"
+    },
+    {
+      "path": "configs/condition_probe_batch2_legacy.json",
+      "sha256": "9f586233600e306088938f2c751ebbb8e5a697dab304961258f533d294f68467"
+    },
+    {
+      "path": "configs/condition_probe_pilot_singleton.json",
+      "sha256": "408a3017c482f5511c8cc5516ed3a7ff37ddbbbf64c824022b432d16d5003446"
+    },
+    {
+      "path": "configs/condition_probe_production.json",
+      "sha256": "3b3a31eb368fd237c9b55ae103baf151fd61935a580dd09c13f986327feb615f"
+    },
+    {
+      "path": "configs/token_confidence.json",
+      "sha256": "c1888579f6af481aef434520f1948aa2b6eecde60376b1ab5bea8638f8c2e404"
+    },
+    {
+      "path": "configs/token_confidence_full.json",
+      "sha256": "2de536a5dc7fd2fe18374f1884e1fd60a7481cdf975f8eb1e45bbb476e59e450"
+    },
+    {
+      "path": "configs/token_confidence_smoke.json",
+      "sha256": "77366c2e57dc5b10c0fa892f64100c8e45ea57d28eb7be005737a66d4dc51eec"
+    },
+    {
+      "path": "reports/CONDITION_BASELINE_PROTOCOL.md",
+      "sha256": "f2ebe9cf925c9d6cf4e59d310c152bfca5a0bb6c483f196a3a9f4dec67c0d5f3"
+    },
+    {
+      "path": "reports/CONDITION_BASELINE_RESULTS.md",
+      "sha256": "a5c79198aeb97be18625d1592aa5b4cd6782eb62ed9cf5c495db73abe8de19e7"
+    },
+    {
+      "path": "reports/CONDITION_PROBE_SCHEMA.md",
+      "sha256": "e78c5fdcdcecafe83e6331cd12470a5c10a722ec97ae0c3f11b53d73dc3b74fa"
+    },
+    {
+      "path": "reports/DIAGNOSTICS_AND_RL_PLAN.md",
+      "sha256": "3fd869af0379a3adaa47585163d67af9851e6d52c81e81cef73b4c1b5a9447ee"
+    },
+    {
+      "path": "reports/TOKEN_CONFIDENCE_PROTOCOL.md",
+      "sha256": "7ab4da55f67a2faaefdd13622539f67a6abeeb8102e92ae0d4910032ce2a46d3"
+    },
+    {
+      "path": "scripts/launch_condition_probe_full.py",
+      "sha256": "e65ee485c467aab3605237c279b4b531ccd5bd8ca19a9b705b59283f9077ad37"
+    },
+    {
+      "path": "scripts/plot_condition_baseline_results.py",
+      "sha256": "32251fbd05ccbade44974bce4a1e470e4eb395b77df61eee9965bfe20c2518e8"
+    },
+    {
+      "path": "scripts/run_condition_baseline.py",
+      "sha256": "5434619e93619101f2dce4a29cd59728abf3502cf0790f2b650110db1ef09c09"
+    },
+    {
+      "path": "scripts/run_condition_baseline_supervised.py",
+      "sha256": "356f95e31429b5a01c38972b520a6463b448d7c33b2eb55a1a11e842e6bca413"
+    },
+    {
+      "path": "scripts/run_condition_probe.py",
+      "sha256": "740f10c175c015a5ac36fa29f9d28c5f104c1c4343829fcbff444de33b9924e7"
+    },
+    {
+      "path": "scripts/run_token_confidence.py",
+      "sha256": "0493bfc2c696d827141c1c0e37e7c38492691321a4a500cedefd7a625d17bb73"
+    },
+    {
+      "path": "scripts/run_token_confidence_supervised.py",
+      "sha256": "18cdfb8ea75dd7c20f731ced53f1dff59d134eabd2f38b570a110ac1a85d3028"
+    },
+    {
+      "path": "src/b_text_detector/__init__.py",
+      "sha256": "e8645c7d53ea58bad10ffd095a94ff0acc0453ce26bc4e2edcb84cf7b45b1d20"
+    },
+    {
+      "path": "src/b_text_detector/condition_baseline.py",
+      "sha256": "934de70f3c31760941f3b1e2783c7f2913ce78da1d8b8183cd408902fc84db86"
+    },
+    {
+      "path": "src/b_text_detector/condition_probe.py",
+      "sha256": "18a6467af039d9631496665510d918ffca527772f1ee789164f6de7ccc1423aa"
+    },
+    {
+      "path": "src/b_text_detector/metrics.py",
+      "sha256": "cfdb1ce6bd63dfb14b5b37a9820df897c0bf574e274212e496b2517eb5c0d26e"
+    },
+    {
+      "path": "src/b_text_detector/ood.py",
+      "sha256": "c1278a4f43c1e649a0ca505ec4b10782ae43aefc9f9fcb5e378e873823045ba3"
+    },
+    {
+      "path": "src/b_text_detector/token_confidence.py",
+      "sha256": "68ea8f216aed583dbd8eadaa4971b50712aba473537fe04138d556cb4777c979"
+    },
+    {
+      "path": "tests/test_condition_baseline.py",
+      "sha256": "06aac22f90c699875afff0b43081f74483c3c16d2bf37026122f6d485f9cff94"
+    },
+    {
+      "path": "tests/test_condition_probe.py",
+      "sha256": "8be14beaecea8a78486fced55f5069ced538be6a24ab28036a5f93fe32fd68a9"
+    },
+    {
+      "path": "tests/test_token_confidence.py",
+      "sha256": "af332d725fbc957b48456ac3c125c22e6d5b2b974aae1cb1dd818a3e8207a3bb"
+    }
+  ]
+}

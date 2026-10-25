@@ -1,0 +1,11 @@
+# Install into the active environment; torch is intentionally absent from this
+# file, so its currently selected CUDA build is retained.
+transformers==4.57.3
+peft==0.18.0
+accelerate==1.12.0
+bitsandbytes==0.49.2
+PyYAML==6.0.3
+scikit-learn==1.9.0
+pytest==8.4.2
+tokenizers==0.22.1
+safetensors==0.8.0
